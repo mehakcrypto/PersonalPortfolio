@@ -1,0 +1,236 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fff0f6, #ffe3ec);
+  color: #333;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+/* Header */
+.flex-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ff69b4, #ff85b3);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.25);
+}
+
+.flex-header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.flex-header p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Section Styling */
+section {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(255, 105, 180, 0.25);
+}
+
+/* Section Headings */
+h2 {
+  color: #ff69b4;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-left: 5px solid #ffaad4;
+  padding-left: 12px;
+}
+
+h4 {
+  color: #c71585;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Typography */
+p, li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+/* Links */
+a {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #d81b60;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  background-color: #ff85b3;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 4px 14px rgba(255, 105, 180, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff5c9f;
+  transform: scale(1.03);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #ffaad4;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+  background-color: #fffafc;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+}
+
+/* Task Message Box */
+.task-message {
+  background: linear-gradient(135deg, #ffd6e9, #ffe4f2);
+  border-left: 6px solid #ff69b4;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  font-size: 1.05rem;
+  color: #c71585;
+  box-shadow: 0 6px 12px rgba(255, 105, 180, 0.2);
+  transition: all 0.3s ease;
+}
+
+.task-message:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+}
+
+/* To-Do List */
+#todo input {
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ffc2d9;
+  border-radius: 10px;
+  background-color: #fffafc;
+}
+
+#taskList {
+  list-style-type: none;
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+#taskList li {
+  background-color: #ffe0ec;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+}
+
+#taskList li button {
+  background-color: #ff6fa1;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  margin-left: 10px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(255, 105, 180, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #todo input {
+    width: 100%;
+  }
+}

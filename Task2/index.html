@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="flex-header">
+    <h1>Hi, I'm Mehak</h1>
+    <p>Front-End Developer | HTML | CSS | JavaScript</p>
+  </header>
+
+  <main class="grid-container">
+    <section id="about">
+      <h2>About Me</h2>
+      <h4>Developer | Innovator | Changemaker</h4>
+      <p>I’m a Computer Science Engineering student pursuing from Chandigarh University driven by a passion for technology, innovation, and meaningful impact. I specialize in front-end and full-stack development — crafting clean, user-friendly web experiences that solve real-world problems.
+      <br><br>
+      I’ve built complete websites, led university clubs, and won national-level hackathons — including 2nd Prize at NIT Hamirpur, the NASA App Development Hackathon, and Hack n Win at IIT Ropar. I’m currently working at a startup focused on health-tech innovation, where we’re building real-time solutions that empower people to take charge of their well-being.
+      <br><br>
+      I’m also working on a Startup named NextMed, a health-tech venture, and actively engage in leadership, event management, and public speaking. With a background in classical music (Pracheen Kala Kendra graduate), anchoring, and volunteer work, I bring creativity and purpose to everything I do.
+      <br><br>
+      I believe in turning ideas into action — and using tech to make a difference. Let’s build something incredible together.</p>
+    </section>
+<section id="projects">
+      <div class="project">
+    <h3>🛒 E-commerce Website</h3>
+    <p>Designed and developed a responsive e-commerce website with user-friendly UI, product filtering, shopping cart, and checkout functionality. Built using HTML, CSS, and JavaScript. Integrated product slider, category navigation, and responsive design elements for optimal user experience.</p>
+  </div>
+  <div class="projects">
+    <h3>Skymate Travels</h3>
+    <p></p>
+  </div>
+<div class="projects">
+  <h3>NextMed - AI-Powered Healthcare Ecosystem</h3>
+  <p>NextMed is a smart healthcare platform designed to simplify medical access and real-time health monitoring.A mobile app built which diagnoses infections using AI models, suggests blood tests, integrates Google Maps for lab locations, enables doctor video consultations, tracks vitals via smartwatches, and offers 1-hour medicine delivery. The app offers AI-based disease prediction through image uploads, live health tracking via smartwatches, and online doctor consultations. It also enables 1-hour medicine delivery and helps u
+    sers locate nearby labs for tests. With a focus on speed, convenience, and preventive care, NextMed empowers individuals to manage their health anytime, anywhere.</p>
+</div>
+  <div class="project">
+    <h3>💡Interactive Website for NASA App Hackathon</h3>
+    <p>Developed an interactive web platform during the NASA App Development Hackathon, aimed at educating students about the United Nations Sustainable Development Goals (SDGs). The website uses engaging games, quizzes, and a treasure hunt-style format to help students explore, learn, and understand global challenges in a fun, interactive way. The project focuses on raising awareness while promoting curiosity and problem-solving among young minds.</p>
+  </div>
+
+  <div class="project">
+    <h3>🚀 Anti-Theft Smart Bike Helmet</h3>
+    <p>A patented innovation featuring an IoT-based locking mechanism to prevent helmet theft. Designed using AutoCAD and developed with microcontrollers for real-time alerts and smart authentication.</p>
+  </div>
+
+  <div class="project">
+    <h3>📊 Income Predictor with EDA (R Language)</h3>
+    <p>Exploratory Data Analysis project using demographic datasets to predict income groups. Utilized R libraries like ggplot2, rpart, caret, and corrplot for insightful visualizations and classification models.</p>
+  </div>
+
+  <div class="project">
+    <h3>🌐 Anand Engineers Website</h3>
+    <p>My first professional internship project where I designed a full website using HTML, CSS, and Elementor for Anand Engineers. Included custom sliders, responsive layout, and optimized UI.</p>
+  </div>
+
+  <div class="project">
+    <h3>🧠 Blue Brain AI</h3>
+    <p>A conceptual project exploring the Blue Brain initiative, its architecture, goals, and potential for uploading human consciousness. Focused on brain emulation and ethical dimensions.</p>
+  </div>
+
+  <div class="project">
+    <h3>Spring Boot CRUD Application</h3>
+    <p>Developed a robust backend system using Spring Boot for performing CRUD operations with a MySQL database. Implemented property injection using @Value and @ConfigurationProperties to efficiently manage configuration values and ensure maintainable code structure.
+</p>
+<div class="project">
+    <h3>Huffman Coding File Compression (C++)</h3>
+    <p>Designed and implemented a text file compression tool in C++ using the Huffman Coding algorithm, reducing file size and optimizing storage efficiency. Demonstrated strong understanding of data structures, file handling, and compression techniques.</p>
+  </div>
+  
+</section>
+    
+   
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Web Designing</li>
+        <li>Sketching</li>
+        <li>Reading Tech Blogs</li>
+      </ul>
+    </section>
+      <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>B.Tech in CSE – Chandigarh University, 2023–2027</li>
+        <li>12th Grade – Delhi Public School, Passed in 2023</li>
+      </ul>
+    </section>
+    
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" placeholder="Write something..." required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mehak-kaur-2061b1288" target="_blank">linkedin.com/in/mehak-kaur</a></p>
+      <p>GitHub: <a href="https://github.com/mehakcrypto" target="_blank">github.com/mehakcrypto</a></p>
+    </section>
+
+    <section id="todo">
+      <h2>📝 To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Add a new task" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mehak. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
