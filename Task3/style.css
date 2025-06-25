@@ -1,0 +1,359 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0b1d3a, #132e4f);
+  color: #f5f5f5;
+  line-height: 1.7;
+  padding: 20px;
+  transition: background 0.5s, color 0.5s;
+}
+
+.light-theme {
+  background: linear-gradient(to right, #e7f5ff, #d0ebff);
+  color: #333;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  z-index: 1000;
+  background-color: #4dabf7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(77, 171, 247, 0.3);
+}
+
+#darkModeToggle:hover {
+  background-color: #339af0;
+}
+
+/* Live Clock */
+#clock {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #4dabf7;
+}
+
+/* Header */
+.flex-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #339af0, #4dabf7);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(77, 171, 247, 0.25);
+}
+
+.flex-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+.flex-header p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Section Styling */
+section {
+  background-color: #1e1e1e;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(77, 171, 247, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.light-theme section {
+  background-color: #ffffff;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(77, 171, 247, 0.25);
+}
+
+/* Section Headings */
+h2 {
+  color: #339af0;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-left: 5px solid #74c0fc;
+  padding-left: 12px;
+}
+
+h4 {
+  color: #4dabf7;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Typography */
+p, li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+/* Links */
+a {
+  color: #4dabf7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #339af0;
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  background-color: #4dabf7;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 4px 14px rgba(77, 171, 247, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #339af0;
+  transform: scale(1.03);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #74c0fc;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+  transition: border 0.3s;
+}
+
+.light-theme form input,
+.light-theme form textarea {
+  background-color: #f0f9ff;
+  color: #333;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #339af0;
+  box-shadow: 0 0 5px rgba(77, 171, 247, 0.3);
+}
+
+/* To-Do List */
+#todo input {
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #a5d8ff;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+}
+
+.light-theme #todo input {
+  background-color: #f0f9ff;
+  color: #333;
+}
+
+#taskList {
+  list-style-type: none;
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+#taskList li {
+  background-color: #333;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.light-theme #taskList li {
+  background-color: #d0ebff;
+  color: #444;
+}
+
+#taskList li button {
+  background-color: #339af0;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(77, 171, 247, 0.2);
+}
+
+/* Progress Bars */
+.progress {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  height: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4dabf7;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.light-theme .progress {
+  background-color: #eee;
+}
+
+/* CAROUSEL */
+.carousel {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.carousel-buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #3b5bdb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-buttons button:hover {
+  background: #1e3a5f;
+}
+
+/* FAQ Accordion */
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background-color: #4dabf7;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.faq-answer {
+  display: none;
+  background-color: #2a2a2a;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+}
+
+.light-theme .faq-answer {
+  background-color: #d0ebff;
+  color: #333;
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #4dabf7;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(77, 171, 247, 0.3);
+}
+
+#scrollTopBtn:hover {
+  background-color: #339af0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #todo input {
+    width: 100%;
+  }
+}
